@@ -3,10 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Forex Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>hii there this is to check that is it working properly</h1>
+
+    <div class="container">
+        <h2>Forex Calculator</h2>
+        <label>Enter the amount:</label>
+        <input type="number" id="amount" value="100">
+        
+        <br>
+        
+        <label>From:</label>
+        <select id="fromCurrency">
+            <option value="EUR">EUR 🇪🇺</option>
+            <option value="USD">USD 🇺🇸</option>
+            <option value="GBP">GBP 🇬🇧</option>
+        </select>
+
+        <label>To:</label>
+        <select id="toCurrency">
+            <option value="INR">INR 🇮🇳</option>
+            <option value="USD">USD 🇺🇸</option>
+            <option value="EUR">EUR 🇪🇺</option>
+        </select>
+
+        <br>
+
+        <button onclick="getExchangeRate()">Get Exchange Rate</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
